@@ -15,13 +15,12 @@ class Solution {
             }
         }
         int[] result = new int[nums.length];
-        int pv=0;
-        int nv =0;
+       
+       
         for(int j=0;j<nums.length;j=j+2){
-            result[j]=pos[pv];
-            result[j+1]=neg[nv];
-            pv++;
-            nv++;
+            result[j]=pos[j/2];
+            result[j+1]=neg[j/2];
+            
         }
    return result; }
 }
